@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: #ffffff;
+    background-image: linear-gradient(to top,#000235 30%, #010F42 72%, #E40913 90%);;
+}
+
+.header{
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./images/netflix-bg.jpg);
+    background-size: cover;
+    padding: 10px 10%;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo{
+    width: 150px;
+}
+
+.button{
+    border: 0;
+    outline: 0;
+    color: #ffffff;
+    background-color: #E50914;
+    padding: 8px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.lang-btn {
+   display: inline-flex;
+   align-items: center;
+   background-color: transparent;
+   border: 1px solid #ffffff;
+   padding: 6px 10px;
+}
+
+.down-img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* margin-top: 80px; */
+}
+
+.main-heading{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    max-width: 700px;
+}
+
+.sub-heading{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.input-text{
+    color: lightgray;
+    padding: 14px 26px;
+    width: 75%;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background-color: #0c0c0c;
+    border: 1px solid lightgrey;;
+    font-size: 15px;
+    margin-right: 8px;
+
+}
+::placeholder { 
+    color: lightgrey;
+    opacity: 1; 
+  }
+.btn-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.get-started-btn{
+    background-color: #E50914;
+    color: #ffffff;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 14px 26px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+
+.features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10%;
+    border-top: 6px solid #333333;
+}
+
+.feature-img{
+    width: 50%;
+    margin-bottom: 20px;
+   
+}
+
+.feature-title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.faq{
+    padding: 50px 12%;
+    border-top: 6px solid #333333;
+    background-color: #0c0c0c;;
+    
+}
+
+.faq-title{
+    font-size: 30px;
+    text-align: left;
+}
+.feature-subtitle{
+    font-size: 16px;
+}
+
+.faq-container{
+    margin-top: 16px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #132144;
+    border-radius: 4px;
+}
+
+.faq-btn{
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 20px;
+    border: 0;
+    border-radius: 4px;
+}
+
+
+.footer {
+    padding: 50px 12%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 6px solid #333333;
+    color: #757575;
+    background-color: #0c0c0c; 
+}
+
+.list p {
+    font-size: 14px;
+    margin: 10px;
+}
+
+
+/*Media quaries */
+@media (max-width:767px){
+    .logo{
+        width: 100px;
+     }   
+
+    .button {
+        padding: 5px 10px;
+     } 
+
+     .lang-btn{
+        padding: 4px 8px;
+     }
+
+    .header{
+        height: 75vh;
+    } 
+
+    .header-content{
+        min-width: 380px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 16px;
+    
+    }
+
+    .main-heading{
+        font-size: 32px;
+        line-height: 45px;
+    }      
+     
+    .sub-heading{
+        font-size: 18px;
+    }
+    .get-started-btn{
+        /* font-size: 12px; */
+        /* padding: 10px 14px; */
+        margin-top: 20px;
+     }
+     .btn-container{
+        text-align: left;
+     }
+     .input-text{
+        width: 100%;
+    }
+    
+     .features{
+        flex-direction: column;
+        padding: 20px 6%;
+        text-align: center;
+    }
+
+     .feature-img{
+        width: 100%;
+    }
+
+     .feature-title{
+        font-size: 30px;
+    }
+    
+    .feature-subtitle{
+        font-size: 16px;
+    }
+    
+    .card-ord{
+        order: 1;
+    }
+
+    .faq-title{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .faq-btn{
+        font-size: 14px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .list p {
+        font-size: 12px;
+    }
+    
+} 
+
+
+
